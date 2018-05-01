@@ -1,0 +1,97 @@
+{
+	"type":"FeatureCollection",
+	"features":[{
+		"type":"Feature",
+		"id":"cbr01",
+		"properties":{
+			"title": "Cebuana Resto",
+			"restotype":"3 Star",
+			"specialty":"Authentic Food from Cebu",
+			"description":"Featuring all authentic food cooked the native Cebu way.",
+			"visits":"10"
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.86260986328125,10.323025760406285]
+		}},{
+		"type":"Feature",
+		"id":"cbr02",
+		"properties":{
+			"title": "Shangri-La Hotel",
+			"restotype":"5 Star",
+			"specialty":"European Cuisine",
+			"description":"Features Europe's greatest chefs which turns any recipes into a taste of heaven. Experience fine dining at its very best.",
+			"visits":"5"
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.80630493164062,10.567472155111538]
+		}},{
+		"type":"Feature",
+		"id":"cbr03",
+		"properties":{
+			"title": "Hen Lin",
+			"restotype":"1 Star",
+			"specialty":"Siomai",
+			"description":"Description for Hen Lin",
+			"visits":100
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.90518188476561,10.834654797047353]
+		}},{
+		"type":"Feature",
+		"id":"cbr04",
+		"properties":{
+			"title": "Lutong Pinoy",
+			"restotype":"4 Star",
+			"specialty":"Kare Kare",
+			"description":"Description for Lutong Pinoy",
+			"visits":500
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.9312744140625,10.352747712085764]
+		}},{
+		"type":"Feature",
+		"id":"cbr05",
+		"properties":{
+			"title": "Don Henricos Pizza",
+			"restotype":"3 Star",
+			"specialty":"Pizza",
+			"description":"Description for Don Henrico's Pizza",
+			"visits":50
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.98345947265624,10.734826239658108]
+		}},{
+		"type":"Feature",
+		"id":"cbr06",
+		"properties":{
+			"title": "Mang Tomas",
+			"label":"Hello World",
+			"restotype":"2 Star",
+			"specialty":"Lechon Kawali",
+			"description":"Description for Mang Tomas",
+			"visits":1000
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.68545532226561,10.371660215460267]
+		}},{
+		"type":"Feature",
+		"id":"cbr07",
+		"properties":{
+			"title": "Fish-All-U-Can",
+			"restotype":"3 Star",
+			"specialty":"Bangus",
+			"description":"Description for Fish-All-U-Can",
+			"visits":99999
+		},
+		"geometry":{
+			"type":"Point",
+			"coordinates":[123.41629028320312,9.886334212670986]
+		}
+	}]
+}
