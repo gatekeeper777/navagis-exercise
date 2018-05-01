@@ -1,0 +1,312 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/* map specific styles */
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+#map {
+	height: 96%;
+	border: 1px solid #777;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.checkbox { display: inline-block; }
+
+input[type="text"] { margin: 5px 0px; width: 16em; }
+
+nav.navbar button.btn-info { background-color: #7386D5; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 0px 10px;
+    background: rgba(250,250,250,1);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i, span {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar, #sidebar_2 {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar_2 { position: absolute; background: #ccc; display: none; height: 100%; }
+#sidebar_2 div.content { padding: 0 3px; }
+#sidebar_2 div.content_title { margin: 0 auto; text-align: center; font-weight: bold; }
+#sidebar_2 div.content_desc, #sidebar_2 div.content_other_info { 
+	border: 1px solid #999; 
+	border-radius: 3px; 
+	margin: 20px 5px; 
+	padding: 2px 3px; 
+	font-size: 0.9em; 
+	height: 150px;
+	text-align: justify;
+	overflow-y: scroll; 
+}
+
+#sidebar_2 div.content_other_info { margin-top: -10px; height: 80px; text-align: center; vertical-align: middle; top: 50%; bottom: 50%; display: inline-block; overflow-y: auto;  width: 97%; }
+
+#sidebar_2 div.close { margin-top: -30px; padding-bottom: 10px; float: right; margin-right: 20px; }
+
+#sidebar.active, #sidebar_2.active {
+    min-width: 0px;
+    max-width: 0px;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header h3, #sidebar.active .CTAs, #sidebar_2.active .sidebar-header h3, #sidebar_2.active .CTAs  {
+    display: none;
+}
+
+#sidebar.active .sidebar-header strong, #sidebar_2.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li, #sidebar_2 ul li {
+	margin: 0 5px;
+}
+
+#sidebar ul li span, #sidebar_2 ul li span {
+	margin-left: 50px;
+}
+
+#sidebar ul li a, #sidebar_2 ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a, #sidebar_2.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#sidebar.active ul li a i, #sidebar_2.active ul li a i  {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a, #sidebar_2.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before,
+#sidebar_2.active a[aria-expanded="false"]::before, #sidebar_2.active a[aria-expanded="true"]::before {
+    top: auto;
+    bottom: 5px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#sidebar .sidebar-header, #sidebar_2 .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar_2 .sidebar-header { background: #ccc; }
+
+#sidebar .sidebar-header strong, #sidebar_2 .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components, #sidebar_2 ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a, #sidebar_2 ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover, #sidebar_2 ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+#sidebar ul li a i, #sidebar_2 ul li a i  {
+    margin-right: 10px;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"], #sidebar_2 ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important ;
+    }
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar .sidebar-header h3, #sidebar .CTAs {
+        display: none;
+    }
+
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right:  0;
+        display: block;
+    }
+
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/* some adjustments to fit the map */
+div#content { width: 100%; padding: 14px 0px; }
